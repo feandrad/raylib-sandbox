@@ -1,6 +1,10 @@
 #include "raylib.h"
 #include "Application.h"
 
+#if defined(PLATFORM_WEB)
+#include <emscripten/emscripten.h>
+#endif
+
 namespace Sandbox
 {
 
@@ -34,43 +38,43 @@ namespace Sandbox
         // m_Game = std::make_unique<Game>();
         m_LastTime = GetTime();
 
-// #if defined(PLATFORM_WEB)
-//         emscripten_set_main_loop(StaticLoop, 0, 1);
-// #else
+#if defined(PLATFORM_WEB)
+        emscripten_set_main_loop(StaticLoop, 0, 1);
+#else
         while (!WindowShouldClose())
         {
             Loop();
         }
-// #endif
+#endif
 
         CloseAudioDevice();
         CloseWindow();
         // UnloadImage(m_Icon);
     }
 
-    void Application::Loop() {
+    void Application::Loop()
+    {
         OnUpdate();
         OnRender();
     }
 
-    void Application::OnUpdate() {
-
+    void Application::OnUpdate()
+    {
     }
 
-    void Application::OnRender() {
+    void Application::OnRender()
+    {
         BeginDrawing();
 
         ClearBackground(RAYWHITE);
-
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
 
         m_Renderer.ClearRandom();
         // m_Renderer.RenderSprite(50, 50, Sprites::torch);
 
         // m_Game->Render();
-
+        m_Renderer.RenderSpriteSheet(10, 10);
         m_Renderer.Update();
-        DrawTextureEx(m_Renderer.GetTexture(), Vector2{0.0f, 0.0f}, 0, (float)m_Specification.Scale,  WHITE);
+        DrawTextureEx(m_Renderer.GetTexture(), Vector2{0.0f, 0.0f}, 0, (float)m_Specification.Scale, WHITE);
         // m_Game->RenderUI();
 
         EndDrawing();

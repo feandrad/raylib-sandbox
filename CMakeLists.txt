@@ -37,21 +37,21 @@ endif()
 add_executable(${PROJECT_NAME} main.cpp
         Application.cpp
         Application.h
-        Graphics/Renderer.cpp
-        Graphics/Renderer.h
         Random.h
-        # Level/Level.cpp
-        # Level/Level.h
-        # Graphics/SpriteSheet.cpp
-        # Graphics/SpriteSheet.h
-        # Graphics/Sprite.cpp
-        # Graphics/Sprite.h
-        # Core/Assert.h
         # gpch.h
         # Game.cpp
         # Game.h
-        # Graphics/ImageUtils.cpp
-        # Graphics/ImageUtils.h
+        Graphics/Renderer.cpp
+        Graphics/Renderer.h
+        Graphics/SpriteSheet.cpp
+        Graphics/SpriteSheet.h
+        Graphics/ImageUtils.cpp
+        Graphics/ImageUtils.h
+        # Graphics/Sprite.cpp
+        # Graphics/Sprite.h
+        # Level/Level.cpp
+        # Level/Level.h
+        # Core/Assert.h
         # Entity/Entity.cpp
         # Entity/Entity.h
         # Entity/Mob.cpp
