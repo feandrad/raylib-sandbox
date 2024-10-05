@@ -9,8 +9,20 @@
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "C:/Users/feand/AppData/Local/Temp/584f838c-25bf-4053-b96d-01f9cb7d154e_kenney_tiny-dungeon.zip.54e/Tiled/sampleMap.tmx": {
+            "scale": 0.68095703125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 256.25699125197195,
+                "y": 159.33457622257282
+            }
+        },
+        "C:/Users/feand/AppData/Local/Temp/584f838c-25bf-4053-b96d-01f9cb7d154e_kenney_tiny-dungeon.zip.54e/Tiled/sampleSheet.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
         "dirt_on_grass.tsx": {
-            "scaleInDock": 3,
+            "scaleInDock": 2,
             "scaleInEditor": 1
         },
         "dirt_road_on_grass.tsx": {
@@ -18,15 +30,16 @@
             "scaleInEditor": 3
         },
         "outside.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1.5,
             "scaleInEditor": 3
         },
         "tavern.tmx": {
             "scale": 2,
-            "selectedLayer": 1,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 233.75,
-                "y": 166
+                "x": 230.25,
+                "y": 199
             }
         }
     },
@@ -37,12 +50,14 @@
     "openFiles": [
         "dirt_on_grass.tsx",
         "outside.tsx",
-        "tavern.tmx"
+        "tavern.tmx",
+        "C:/Users/feand/AppData/Local/Temp/584f838c-25bf-4053-b96d-01f9cb7d154e_kenney_tiny-dungeon.zip.54e/Tiled/sampleMap.tmx"
     ],
     "project": "sandbox.tiled-project",
     "recentFiles": [
         "dirt_on_grass.tsx",
         "outside.tsx",
+        "C:/Users/feand/AppData/Local/Temp/584f838c-25bf-4053-b96d-01f9cb7d154e_kenney_tiny-dungeon.zip.54e/Tiled/sampleMap.tmx",
         "tavern.tmx",
         "dirt_road_on_grass.tsx"
     ],
